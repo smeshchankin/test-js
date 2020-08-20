@@ -1,4 +1,4 @@
-let asserts = {
+let assert = {
     equals: function (expected, actual, message) {
         let stdout = console.error;
         if (expected === actual) {
