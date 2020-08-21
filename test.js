@@ -7,5 +7,9 @@ let assert = {
             stdout = console.warn;
         }
         stdout(message + ': expected = %s, actual = %s', expected, actual);
+    },
+    true: function(actual, message) {
+        const stdout = actual ? console.log : console.error;
+        stdout(message);
     }
 };
